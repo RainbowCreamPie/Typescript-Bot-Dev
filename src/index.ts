@@ -1,12 +1,17 @@
 import 'dotenv/config';
+import { IntentOptions } from './indentOptions';
+import { CommandKit } from 'commandkit';
+import path from 'path';
 import { Client } from 'discord.js';
 
 const client = new Client({
-    intents: ['Guilds', 'GuildMessages', 'GuildMembers', 'MessageContent'],
+    intents: IntentOptions,
 });
 
-client.on('ready', (c) => {
-    console.log(`${c.user.username} is online.`);
+new CommandKit({
+    client,
+    eventsPath: path.join(__dirname, 'events'),
+    commandsPath: path.join(__dirname, 'commands')
 });
 
 client.login(process.env.TOKEN);

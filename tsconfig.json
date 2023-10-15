@@ -5,6 +5,7 @@
     "moduleResolution": "Node",
     "strict": true,
     "noImplicitAny": true,
+    "esModuleInterop": true,
     "declaration": false,
     "skipLibCheck": true,
     "strictNullChecks": true,
