@@ -20,7 +20,7 @@
     "watch": "^1.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20.8.3",
+    "@types/node": "^20.8.7",
     "nodemon": "^3.0.1",
     "tsx": "^3.13.0"
   }
